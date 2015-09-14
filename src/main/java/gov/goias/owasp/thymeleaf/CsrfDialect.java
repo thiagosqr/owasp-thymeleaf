@@ -9,11 +9,6 @@ import java.util.Set;
 import java.util.function.Supplier;
 
 /**
- * <b>Título:</b> CsrfDialect
- * <br><b>Descrição:</b> Definie um dialeto para<br>
- * integração do thymeleaf com o OWASP CSRF.
- * <br><b>Copyright:</b> Copyright(c) 2015
- * <br><b>Empresa:</b> SEGPLAN
  * @author Thiago Rios de Siqueira
  */
 public class CsrfDialect extends AbstractDialect {

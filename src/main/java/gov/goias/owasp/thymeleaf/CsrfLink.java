@@ -10,13 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.function.Supplier;
 
 /**
- * <b>Título:</b> CsrfLink
- * <br><b>Descrição:</b> Define componente HTML que<br>
- * substitui atributo do elemento usado com novo link habilitando<br>
- * suporte a CSRF <br>
- * Ex: &lt;a href="aluno/1/delete" csrf:token_for="href" .../&gt;
- * <br><b>Copyright:</b> Copyright(c) 2015
- * <br><b>Empresa:</b> SEGPLAN
  * @author Thiago Rios de Siqueira
  */
 public class CsrfLink extends AbstractAttrProcessor {
