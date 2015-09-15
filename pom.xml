@@ -8,12 +8,17 @@
     <packaging>jar</packaging>
     <version>1.0.0</version>
 
+    <name>owasp-thymeleaf</name>
     <description>OWASP CSRFGuard 3 integration with Thymeleaf</description>
+    <url>https://github.com/thiagosqr/owasp-thymeleaf</url>
 
-    <organization>
-        <name>Thiago Rios de Siqueira</name>
-        <url>https://github.com/thiagosqr</url>
-    </organization>
+    <developers>
+        <developer>
+            <id>thiagosqr</id>
+            <name>Thiago Rios de Siqueira</name>
+            <organization>Indra Company Brazil</organization>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
@@ -24,6 +29,7 @@
     </licenses>
 
     <scm>
+        <url>https://github.com/thiagosqr/owasp-thymeleaf </url>
         <connection>scm:git:https://github.com/thiagosqr/owasp-thymeleaf.git</connection>
     </scm>
 
@@ -114,16 +120,27 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.3</version>
+                <version>1.6.6</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
             </plugin>
 
         </plugins>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
