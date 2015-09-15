@@ -1,4 +1,4 @@
-package gov.goias.owasp.thymeleaf;
+package com.github.thiagosqr.owasp.thymeleaf;
 
 import org.owasp.csrfguard.CsrfGuard;
 import org.thymeleaf.Arguments;
